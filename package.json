@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "concurrently": "^6.4.0"
+  },
+  "name": "sort",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:build": "tsc -w",
+    "start:run": "nodemon build/index.js",
+    "start": "concurrently npm:start:*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattriese/udemy-typescript-complete-sort.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mattriese/udemy-typescript-complete-sort/issues"
+  },
+  "homepage": "https://github.com/mattriese/udemy-typescript-complete-sort#readme"
+}

@@ -1,5 +1,5 @@
-const logSomething = () => {
-  console.log('somethig');
-};
+import { Sorter } from './bubbleSort';
 
-logSomething();
+const sorted = new Sorter([10, 3, -5, 0]);
+sorted.bubbleSort();
+console.log(sorted.collection);
