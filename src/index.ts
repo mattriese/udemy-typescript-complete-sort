@@ -1,5 +1,7 @@
-import { Sorter } from './bubbleSort';
+import { Sorter } from './Sorter';
+import { NumbersCollection } from './NumbersCollection';
 
-const sorted = new Sorter([10, 3, -5, 0]);
+let col = new NumbersCollection([10, 3, -5, 0]);
+const sorted = new Sorter(col);
 sorted.bubbleSort();
-console.log(sorted.collection);
+console.log('LOG===', sorted.collection);
