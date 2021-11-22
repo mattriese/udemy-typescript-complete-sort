@@ -1,6 +1,6 @@
-import { Collection } from './Sorter';
+import { Sortable } from './Sorter';
 
-export class NumbersCollection implements Collection {
+export class NumbersCollection implements Sortable {
   constructor(public data: number[]) {}
   length = this.data.length;
   compare(leftIdx: number, rightIdx: number): boolean {

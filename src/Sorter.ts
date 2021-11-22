@@ -1,12 +1,8 @@
 /**
  * Bubble sort algorithm
  */
-// interface SortClass {
-//   collection: number[];
-//   bubbleSort(): void;
-// }
 
-export interface Collection {
+export interface Sortable {
   // data: <--- the whole point was that the data type is hidden in the individual classes
   // and Sorter doesn't have to know!!
   length: number;
@@ -15,7 +11,7 @@ export interface Collection {
 }
 
 export class Sorter {
-  constructor(public collection: Collection) {}
+  constructor(public collection: Sortable) {}
 
   bubbleSort(): void {
     const { length } = this.collection;
